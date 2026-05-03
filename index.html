@@ -172,20 +172,13 @@
 
         <p><b>Valuation Methods:</b></p>
         <ul>
-          <li>DCF</li>
-          <li>Relative Valuation</li>
+          <li>Discounted Cash Flow (DCF)</li>
+          <li>Relative Valuation (Comps)</li>
         </ul>
 
-        <p><b>Model Components:</b></p>
-        <ul>
-          <li>Revenue drivers & margins</li>
-          <li>WACC & beta estimation</li>
-          <li>Sensitivity tables</li>
-        </ul>
+        <p><b>Model Depth:</b> Fully linked model with sensitivity and scenario analysis</p>
 
-        <p><b>Framework:</b> Based on Valuation School methodologies</p>
-
-        <a href="#" class="btn">View Model</a>
+        <p><b>Output:</b> Excel-based financial model and valuation summary</p>
       </div>
 
       <div class="project">
@@ -197,7 +190,11 @@
           <li>Historical valuation comparison</li>
         </ul>
 
-        <a href="#" class="btn">View Analysis</a>
+        <p><b>Output:</b> Index-level valuation framework and comparative analysis</p>
+
+        <a href="https://drive.google.com/drive/folders/14AA5CHD85W6C-L4QYD09P9YYShG5mcQJ?usp=sharing" target="_blank" class="btn">
+          View Reports
+        </a>
       </div>
 
       <div class="project">
@@ -209,7 +206,11 @@
           <li>Investment thesis development</li>
         </ul>
 
-        <a href="#" class="btn">View Reports</a>
+        <p><b>Output:</b> Structured valuation reports</p>
+
+        <a href="https://drive.google.com/drive/folders/1QylB0_rJe52NZGMt2xfflCQn2mWc2uf7?usp=sharing" target="_blank" class="btn">
+          View Reports
+        </a>
       </div>
 
       <div class="project">
@@ -241,40 +242,33 @@
         <h3>Advanced Financial Modelling & Valuation – The Valuation School</h3>
         <p>Core training in financial modelling, DCF valuation, and report creation.</p>
         <p>Applied directly in valuation models and investment analysis.</p>
-        <a href="#" class="btn">View Certificate</a>
       </div>
 
       <div class="project">
         <h3>Citi – Investment Banking Job Simulation</h3>
         <p>Built financial projections and performed comparable company analysis.</p>
         <p>Developed investment summary and target company profile.</p>
-        <a href="#" class="btn">View Certificate</a>
       </div>
 
       <div class="project">
         <h3>CFA Level II – CFA Institute</h3>
         <p>Advanced coverage of valuation, equity analysis, and portfolio management.</p>
-        <p>Applied frameworks in financial modelling and investment analysis.</p>
       </div>
 
       <div class="project">
         <h3>BCG – Strategy Consulting Simulation</h3>
         <p>Structured problem-solving and business analysis.</p>
-        <p>Focused on strategy and decision frameworks.</p>
       </div>
 
       <div class="project">
         <h3>CFA Level I – CFA Institute</h3>
         <p>Foundation in financial analysis and investment tools.</p>
-        <p>Built base understanding of capital markets.</p>
       </div>
 
       <div class="project">
         <h3>Investment Banking – 365 Careers</h3>
         <p>Covered financial modelling, valuation techniques, and deal basics.</p>
-        <p>Included DCF and comparable analysis.</p>
       </div>
-
     </section>
 
     <!-- CONTACT -->
@@ -283,38 +277,12 @@
 
       <p>Email: dalmiabhavya309@gmail.com</p>
       <p>Mobile: +91 87420 8428</p>
-
-      <a class="btn" href="https://www.linkedin.com/in/bhavyadalmia/" target="_blank">
-        LinkedIn
-      </a>
+      <p>LinkedIn: www.linkedin.com/in/bhavyadalmia/</p>
     </section>
 
   </div>
 
 </div>
-
-<script>
-  const sections = document.querySelectorAll("section");
-  const navLinks = document.querySelectorAll(".sidebar a");
-
-  window.addEventListener("scroll", () => {
-    let current = "";
-
-    sections.forEach(section => {
-      const sectionTop = section.offsetTop;
-      if (scrollY >= sectionTop - 200) {
-        current = section.getAttribute("id");
-      }
-    });
-
-    navLinks.forEach(a => {
-      a.classList.remove("active");
-      if (a.getAttribute("href") === "#" + current) {
-        a.classList.add("active");
-      }
-    });
-  });
-</script>
 
 </body>
 </html>
