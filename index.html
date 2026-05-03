@@ -1,80 +1,320 @@
-Citi logo
-Citi - Investment Banking  Job Simulation
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Bhavya Dalmia | Investment Profile</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-Citi
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
-Issued Oct 2025
+<style>
+  html { scroll-behavior: smooth; }
 
-Credential ID pyzFjBzfCvsuqRHwr
+  body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: #0b0f14;
+    color: #d1d5db;
+  }
 
-Show credential
-Skills: Microsoft Excel
+  .container {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    height: 100vh;
+  }
 
-Thumbnail for citi certificate.pdf
-citi certificate.pdf
+  .sidebar {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    background: #05080c;
+    padding: 20px;
+    border-right: 1px solid #111;
+  }
 
-* Completed a job simulation where acting as a buyside analyst for a
-   hypothetical client, Big Box Retail, who were looking to acquire a small
-   retail company
- * Created a company profile for the target
- * Developed a five-year financial projection using a simple income statement
-   model in Excel
- * Drafted a comparative company analysis
- * Synthesized an investor update into an internal summary report
+  .sidebar a {
+    display: block;
+    padding: 10px;
+    color: #9ca3af;
+    text-decoration: none;
+    border-radius: 4px;
+  }
 
-CFA Institute logo
-CFA Program Level II
+  .sidebar a:hover, .active {
+    background: #38bdf8;
+    color: #000;
+  }
 
-CFA Institute
+  .main {
+    padding: 40px;
+    overflow-y: auto;
+  }
 
-Issued Oct 2025
+  .title { font-size: 2.2rem; color: #fff; }
+  .subtitle { color: #6b7280; margin-bottom: 20px; }
 
-Credential ID 163003706
+  section { margin-bottom: 60px; }
+  h2 { color: #fff; }
 
-Show credential
-Skills: Microsoft Excel
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+  }
 
-Thumbnail for CFA LEVEL 2
-CFA LEVEL 2
+  .box {
+    background: #111827;
+    padding: 20px;
+    border: 1px solid #1f2937;
+  }
 
-Boston Consulting Group (BCG) logo
-BCG - Strategy Consulting Job Simulation
+  ul { padding-left: 18px; }
 
-Boston Consulting Group (BCG)
+  .project {
+    border-left: 3px solid #38bdf8;
+    padding-left: 15px;
+    margin-bottom: 30px;
+  }
 
-Issued Sep 2025
+  .btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 6px 12px;
+    border: 1px solid #38bdf8;
+    color: #38bdf8;
+    text-decoration: none;
+  }
 
-Credential ID kTnhSLipNBBJxKaNC
+  .btn:hover {
+    background: #38bdf8;
+    color: #000;
+  }
+</style>
+</head>
 
-Show credential
-Thumbnail for bcg consulting.pdf
-bcg consulting.pdf
+<body>
 
-CFA Institute logo
-CFA Program Level I
+<div class="container">
 
-CFA Institute
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <a href="#profile">Profile</a>
+    <a href="#skills">Capabilities</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#contact">Contact</a>
+  </div>
 
-Issued Oct 2024
+  <!-- Main -->
+  <div class="main">
 
-Credential ID 117856895
+    <!-- PROFILE -->
+    <section id="profile">
+      <div class="title">Bhavya Dalmia</div>
+      <div class="subtitle">
+        CFA Level III Candidate | Valuation | Financial Modelling | Excel & PowerPoint
+      </div>
 
-Show credential
-Skills: Investment Products, Financial Modeling, +3 skills
+      <p>
+        Finance graduate focused on valuation, capital allocation, and identifying mispriced opportunities.
+        Experience building structured financial models and translating analysis into investment decisions.
+      </p>
 
-Thumbnail for CFA Level 1
-CFA Level 1
+      <div class="grid">
+        <div class="box"><b>Core Focus</b><br>Valuation & Investment Analysis</div>
+        <div class="box"><b>Tools</b><br>Excel (Advanced) | PowerPoint</div>
+      </div>
+    </section>
 
-365 Careers logo
-Investment Banking
+    <!-- SKILLS -->
+    <section id="skills">
+      <h2>Capabilities</h2>
 
-365 Careers
+      <div class="grid">
+        <div class="box">
+          <b>Financial Modelling</b>
+          <ul>
+            <li>3-Statement Models</li>
+            <li>DCF Valuation</li>
+            <li>Sensitivity Analysis</li>
+          </ul>
+        </div>
 
-Issued Sep 2024
+        <div class="box">
+          <b>Valuation</b>
+          <ul>
+            <li>Comparable Companies</li>
+            <li>Relative Valuation</li>
+            <li>WACC & Beta</li>
+          </ul>
+        </div>
 
-Credential ID UC-559146e7-5adf-4d76-b64d-3290036c89cf
+        <div class="box">
+          <b>Analysis</b>
+          <ul>
+            <li>ROIC & DuPont</li>
+            <li>Altman Z-Score</li>
+            <li>Financial Statements</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-Skills: Financial Modeling, Microsoft Excel, +1 skill
+    <!-- PROJECTS -->
+    <section id="projects">
+      <h2>Self Projects</h2>
 
-Thumbnail for udemy.pdf
-udemy.pdf
+      <div class="project">
+        <h3>Britannia Valuation Model</h3>
+
+        <p><b>Scope:</b> Integrated 3-statement model with projections</p>
+
+        <p><b>Valuation Methods:</b></p>
+        <ul>
+          <li>DCF</li>
+          <li>Relative Valuation</li>
+        </ul>
+
+        <p><b>Model Components:</b></p>
+        <ul>
+          <li>Revenue drivers & margins</li>
+          <li>WACC & beta estimation</li>
+          <li>Sensitivity tables</li>
+        </ul>
+
+        <p><b>Framework:</b> Based on Valuation School methodologies</p>
+
+        <a href="#" class="btn">View Model</a>
+      </div>
+
+      <div class="project">
+        <h3>Index Valuation</h3>
+
+        <ul>
+          <li>P/E and EV/EBITDA analysis</li>
+          <li>Sector weight breakdown</li>
+          <li>Historical valuation comparison</li>
+        </ul>
+
+        <a href="#" class="btn">View Analysis</a>
+      </div>
+
+      <div class="project">
+        <h3>Company Valuation</h3>
+
+        <ul>
+          <li>Ratio & capital structure analysis</li>
+          <li>Multiples-based valuation</li>
+          <li>Investment thesis development</li>
+        </ul>
+
+        <a href="#" class="btn">View Reports</a>
+      </div>
+
+      <div class="project">
+        <h3>NYU Stern Learning (Dr. Aswath Damodaran)</h3>
+
+        <p><b>Valuation:</b> DCF, intrinsic value, mispricing</p>
+        <p><b>Corporate Finance:</b> capital structure, cost of capital</p>
+        <p><b>Application:</b> implemented in financial models</p>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education">
+      <h2>Education</h2>
+
+      <div class="box">
+        <ul>
+          <li>B.Com – 2024</li>
+          <li>CFA Level II Cleared – CFA Institute</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certifications">
+      <h2>Certifications</h2>
+
+      <div class="project">
+        <h3>Advanced Financial Modelling & Valuation – The Valuation School</h3>
+        <p>Core training in financial modelling, DCF valuation, and report creation.</p>
+        <p>Applied directly in valuation models and investment analysis.</p>
+        <a href="#" class="btn">View Certificate</a>
+      </div>
+
+      <div class="project">
+        <h3>Citi – Investment Banking Job Simulation</h3>
+        <p>Built financial projections and performed comparable company analysis.</p>
+        <p>Developed investment summary and target company profile.</p>
+        <a href="#" class="btn">View Certificate</a>
+      </div>
+
+      <div class="project">
+        <h3>CFA Level II – CFA Institute</h3>
+        <p>Advanced coverage of valuation, equity analysis, and portfolio management.</p>
+        <p>Applied frameworks in financial modelling and investment analysis.</p>
+      </div>
+
+      <div class="project">
+        <h3>BCG – Strategy Consulting Simulation</h3>
+        <p>Structured problem-solving and business analysis.</p>
+        <p>Focused on strategy and decision frameworks.</p>
+      </div>
+
+      <div class="project">
+        <h3>CFA Level I – CFA Institute</h3>
+        <p>Foundation in financial analysis and investment tools.</p>
+        <p>Built base understanding of capital markets.</p>
+      </div>
+
+      <div class="project">
+        <h3>Investment Banking – 365 Careers</h3>
+        <p>Covered financial modelling, valuation techniques, and deal basics.</p>
+        <p>Included DCF and comparable analysis.</p>
+      </div>
+
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2>Contact</h2>
+
+      <p>Email: dalmiabhavya309@gmail.com</p>
+      <p>Mobile: +91 87420 8428</p>
+
+      <a class="btn" href="https://www.linkedin.com/in/bhavyadalmia/" target="_blank">
+        LinkedIn
+      </a>
+    </section>
+
+  </div>
+
+</div>
+
+<script>
+  const sections = document.querySelectorAll("section");
+  const navLinks = document.querySelectorAll(".sidebar a");
+
+  window.addEventListener("scroll", () => {
+    let current = "";
+
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop;
+      if (scrollY >= sectionTop - 200) {
+        current = section.getAttribute("id");
+      }
+    });
+
+    navLinks.forEach(a => {
+      a.classList.remove("active");
+      if (a.getAttribute("href") === "#" + current) {
+        a.classList.add("active");
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
