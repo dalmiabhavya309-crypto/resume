@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Bhavya Dalmia | Investment Profile</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+  body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: #0b0f14;
+    color: #d1d5db;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    height: 100vh;
+  }
+
+  .sidebar {
+    background: #05080c;
+    padding: 20px;
+    border-right: 1px solid #111;
+  }
+
+  .sidebar h2 {
+    font-size: 1rem;
+    color: #9ca3af;
+    margin-bottom: 20px;
+  }
+
+  .sidebar a {
+    display: block;
+    padding: 10px;
+    color: #9ca3af;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+
+  .sidebar a:hover {
+    background: #111827;
+    color: #fff;
+  }
+
+  .main {
+    padding: 30px;
+    overflow-y: auto;
+  }
+
+  .title {
+    font-size: 2rem;
+    color: #fff;
+  }
+
+  .subtitle {
+    color: #6b7280;
+    margin-bottom: 25px;
+  }
+
+  h2 {
+    margin-top: 40px;
+    font-size: 1.4rem;
+    color: #fff;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+  }
+
+  .box {
+    background: #111827;
+    padding: 20px;
+    border: 1px solid #1f2937;
+  }
+
+  .box h3 {
+    margin-top: 0;
+    font-size: 0.85rem;
+    color: #9ca3af;
+    text-transform: uppercase;
+  }
+
+  .metric {
+    font-size: 1.3rem;
+    color: #fff;
+  }
+
+  ul {
+    padding-left: 18px;
+  }
+
+  li {
+    margin-bottom: 6px;
+  }
+
+  .project {
+    border-left: 3px solid #38bdf8;
+    padding-left: 12px;
+    margin-bottom: 25px;
+  }
+
+  .btn {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 6px 12px;
+    border: 1px solid #38bdf8;
+    color: #38bdf8;
+    text-decoration: none;
+    font-size: 0.85rem;
+  }
+
+  .btn:hover {
+    background: #38bdf8;
+    color: #000;
+  }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2>Navigation</h2>
+    <a href="#profile">Profile</a>
+    <a href="#skills">Capabilities</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <!-- Main -->
+  <div class="main">
+
+    <!-- PROFILE -->
+    <section id="profile">
+      <div class="title">Bhavya Dalmia</div>
+      <div class="subtitle">
+        CFA Level III Candidate | Valuation | Financial Modelling | Excel & PowerPoint
+      </div>
+
+      <!-- ABOUT ABOVE -->
+      <p>
+        Finance graduate and CFA Level III candidate with hands-on experience in equity research,
+        DCF modelling, and financial statement analysis. Focused on identifying mispricing,
+        building structured models, and translating analysis into investment decisions.
+      </p>
+
+      <div class="grid" style="margin-top:20px;">
+        <div class="box">
+          <h3>Core Focus</h3>
+          <div class="metric">Valuation & Investment Analysis</div>
+        </div>
+
+        <div class="box">
+          <h3>Tools</h3>
+          <div class="metric">Excel (Advanced) | PowerPoint</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <h2>Capabilities</h2>
+
+      <div class="grid">
+        <div class="box">
+          <h3>Financial Modelling</h3>
+          <ul>
+            <li>3-Statement Models</li>
+            <li>DCF Valuation</li>
+            <li>Sensitivity Tables</li>
+            <li>Scenario Analysis</li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h3>Valuation</h3>
+          <ul>
+            <li>Comparable Companies</li>
+            <li>Precedent Transactions</li>
+            <li>WACC & Beta Estimation</li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h3>Advanced Analysis</h3>
+          <ul>
+            <li>ROIC & DuPont</li>
+            <li>Altman Z-Score</li>
+            <li>Regression Analysis</li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h3>Output</h3>
+          <ul>
+            <li>Excel Financial Models</li>
+            <li>Pitch Decks (PowerPoint)</li>
+            <li>Investment Memos</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <h2>Self Projects</h2>
+
+      <div class="project">
+        <h3>Asian Paints Valuation Model</h3>
+        <p>
+          Built full 3-statement model with DCF, WACC, ROIC, DuPont,
+          Altman Z-score, and football field valuation.
+        </p>
+        <p><b>Includes:</b> Sensitivity Analysis | Regression Beta | Risk Analysis</p>
+        <a href="#" class="btn">View Model</a>
+      </div>
+
+      <div class="project">
+        <h3>Valuation Reports</h3>
+        <p>
+          One-page company valuation summaries covering key ratios,
+          capital structure, ownership, and valuation multiples.
+        </p>
+        <a href="#" class="btn">View Reports</a>
+      </div>
+
+      <div class="project">
+        <h3>NYU Stern Learning (Dr. Aswath Damodaran)</h3>
+        <p>
+          Completed valuation and corporate finance curriculum covering DCF,
+          market mispricing, capital structure, and firm valuation.
+        </p>
+      </div>
+
+    </section>
+
+    <!-- EDUCATION + CERTIFICATIONS -->
+    <section id="education">
+      <h2>Education & Certifications</h2>
+
+      <div class="grid">
+
+        <div class="box">
+          <h3>Education</h3>
+          <ul>
+            <li>B.Com – Maharaja Ganga Singh University (2024)</li>
+            <li>CFA Level II Cleared – CFA Institute</li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h3>Certifications</h3>
+          <ul>
+            <li>Advanced Valuation & Financial Modelling</li>
+            <li>Investment Banking Certification</li>
+            <li>Strategy Consulting – BCG</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2>Contact</h2>
+
+      <p>Email: dalmiabhavya309@gmail.com</p>
+      <p>Mobile: +91 87420 8428</p>
+
+      <a class="btn" href="https://www.linkedin.com/in/bhavyadalmia/" target="_blank">
+        LinkedIn Profile
+      </a>
+    </section>
+
+  </div>
+
+</div>
+
+</body>
+</html>
