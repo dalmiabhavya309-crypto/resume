@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Bhavya Dalmia | Investment Profile</title>
+<title>Bhavya Dalmia | Valuation Research</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
@@ -13,110 +13,97 @@
   body {
     margin: 0;
     font-family: 'Inter', sans-serif;
-    background: #0b0f14;
-    color: #d1d5db;
+    background: #f8fafc;
+    color: #111827;
   }
 
-  .container {
-    display: grid;
-    grid-template-columns: 240px 1fr;
-    height: 100vh;
-  }
-
-  .sidebar {
-    position: sticky;
+  /* NAVBAR */
+  .navbar {
+    position: fixed;
     top: 0;
-    height: 100vh;
-    background: #05080c;
-    padding: 20px;
-    border-right: 1px solid #111;
+    width: 100%;
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    padding: 12px 30px;
+    z-index: 1000;
   }
 
-  .sidebar a {
-    display: block;
-    padding: 10px;
-    color: #9ca3af;
+  .navbar a {
+    margin-right: 25px;
     text-decoration: none;
-    border-radius: 6px;
-    transition: 0.2s;
+    color: #374151;
+    font-size: 0.9rem;
+    font-weight: 500;
   }
 
-  .sidebar a:hover {
-    background: #111827;
-    color: #fff;
+  .navbar a:hover {
+    color: #2563eb;
   }
 
-  .main {
-    padding: 50px;
-    overflow-y: auto;
+  /* CONTAINER */
+  .container {
+    max-width: 900px;
+    margin: auto;
+    padding: 90px 20px 40px;
   }
 
-  .title {
-    font-size: 2.4rem;
-    color: #fff;
+  /* PAGE */
+  .page {
+    background: #ffffff;
+    padding: 40px;
+    margin-bottom: 40px;
+    border: 1px solid #e5e7eb;
   }
 
-  .subtitle {
-    color: #6b7280;
+  /* HEADER BLOCK */
+  .section-header {
+    background: #eff6ff;
+    border-left: 6px solid #2563eb;
+    padding: 12px;
     margin-bottom: 20px;
+    font-weight: 600;
+    color: #1e3a8a;
   }
 
-  .cta {
-    margin-top: 15px;
+  h1 { font-size: 2rem; }
+  h3 { color: #1e40af; }
+
+  p { line-height: 1.6; color: #374151; }
+  ul { padding-left: 18px; }
+
+  /* BOXES */
+  .highlight {
+    background: #eff6ff;
+    border-left: 4px solid #2563eb;
+    padding: 12px;
+    margin: 15px 0;
   }
 
+  .positive {
+    background: #ecfdf5;
+    border-left: 4px solid #16a34a;
+    padding: 12px;
+    margin: 15px 0;
+  }
+
+  /* BUTTONS */
   .btn {
     display: inline-block;
-    padding: 8px 14px;
+    margin-top: 12px;
     margin-right: 10px;
-    border: 1px solid #38bdf8;
-    color: #38bdf8;
-    text-decoration: none;
+    padding: 8px 14px;
     border-radius: 6px;
-    transition: 0.3s;
-  }
-
-  .btn:hover {
-    background: #38bdf8;
-    color: #000;
-  }
-
-  section { margin-bottom: 70px; }
-
-  h2 {
-    color: #fff;
-    margin-bottom: 20px;
-  }
-
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 20px;
-  }
-
-  .box {
-    background: #111827;
-    padding: 20px;
-    border: 1px solid #1f2937;
-    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-decoration: none;
+    border: 1px solid #2563eb;
+    color: #2563eb;
     transition: 0.25s;
   }
 
-  .box:hover {
-    border-color: #38bdf8;
-    transform: translateY(-3px);
-  }
-
-  ul { padding-left: 18px; }
-
-  .project {
-    border-left: 3px solid #38bdf8;
-    padding-left: 15px;
-    margin-bottom: 30px;
-  }
-
-  .project:hover {
-    border-color: #60a5fa;
+  .btn:hover {
+    background: #2563eb;
+    color: white;
   }
 
 </style>
@@ -124,204 +111,162 @@
 
 <body>
 
+<!-- NAV -->
+<div class="navbar">
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#education">Education</a>
+  <a href="#contact">Contact</a>
+</div>
+
 <div class="container">
 
-  <!-- Sidebar -->
-  <div class="sidebar">
-    <a href="#profile">Profile</a>
-    <a href="#skills">Capabilities</a>
-    <a href="#projects">Projects</a>
-    <a href="#education">Education</a>
-    <a href="#certifications">Certifications</a>
-    <a href="#contact">Contact</a>
+  <!-- ABOUT -->
+  <div class="page" id="about">
+    <h1>Bhavya Dalmia</h1>
+    <p><b>CFA Level III Candidate | Valuation | Financial Modelling</b></p>
+
+    <div class="section-header">1. About</div>
+
+    <p>
+      Finance graduate and CFA Level III candidate focused on valuation, capital allocation,
+      and identifying mispriced opportunities. Experience building structured financial models
+      and applying valuation frameworks across different market contexts.
+    </p>
+
+    <p>
+      Approach combines bottom-up financial analysis with macro-driven inputs such as interest
+      rates, growth assumptions, and risk premiums. Strong emphasis on linking financial statements,
+      maintaining internal consistency, and translating analysis into investment conclusions.
+    </p>
+
+    <div class="highlight">
+      Focus: Converting financial data into structured valuation frameworks and investment insights
+    </div>
+
   </div>
 
-  <!-- Main -->
-  <div class="main">
+  <!-- SKILLS -->
+  <div class="page" id="skills">
+    <div class="section-header">2. Skills</div>
 
-    <!-- HERO / PROFILE -->
-    <section id="profile">
-      <div class="title">Bhavya Dalmia</div>
-      <div class="subtitle">
-        CFA Level III Candidate | Valuation | Financial Modelling | Excel & PowerPoint
-      </div>
+    <h3>Financial Modelling</h3>
+    <ul>
+      <li>Integrated 3-statement modelling</li>
+      <li>Driver-based forecasting</li>
+      <li>Scenario and sensitivity analysis</li>
+    </ul>
 
-      <div class="cta">
-        <a href="mailto:dalmiabhavya309@gmail.com" class="btn">Email Me</a>
-        <a href="https://www.linkedin.com/in/bhavyadalmia/" target="_blank" class="btn">LinkedIn</a>
-      </div>
+    <h3>Valuation</h3>
+    <ul>
+      <li>Discounted Cash Flow (DCF)</li>
+      <li>Comparable Companies (Comps)</li>
+      <li>Cost of Capital (WACC, Beta)</li>
+    </ul>
 
-      <p style="margin-top:25px;">
-        Finance graduate and CFA Level III candidate with a strong focus on valuation, capital allocation,
-        and identifying mispriced opportunities. Experienced in building structured financial models and
-        applying valuation frameworks to real-world scenarios.
-      </p>
+    <h3>Analysis</h3>
+    <ul>
+      <li>ROIC and DuPont analysis</li>
+      <li>Altman Z-score</li>
+      <li>Financial statement analysis</li>
+    </ul>
 
-      <p>
-        My work emphasizes a disciplined, framework-driven approach to investment analysis—combining
-        bottom-up financial modelling with macro awareness and market-implied signals. I focus on translating
-        complex financial data into clear investment insights and actionable conclusions.
-      </p>
+    <div class="positive">
+      Output: Structured models, valuation frameworks, and investment insights
+    </div>
+  </div>
 
-      <div class="grid" style="margin-top:20px;">
-        <div class="box">
-          <b>Core Focus</b><br>
-          Valuation & Investment Analysis
-        </div>
-        <div class="box">
-          <b>Tools</b><br>
-          Excel (Advanced) | PowerPoint
-        </div>
-      </div>
-    </section>
+  <!-- PROJECTS -->
+  <div class="page" id="projects">
+    <div class="section-header">3. Self Projects</div>
 
-    <!-- SKILLS -->
-    <section id="skills">
-      <h2>Capabilities</h2>
+    <h3>Valuation Model with Researched Forecasting</h3>
 
-      <div class="grid">
-        <div class="box">
-          <b>Financial Modelling</b>
-          <ul>
-            <li>3-Statement Models</li>
-            <li>DCF Valuation</li>
-            <li>Sensitivity Analysis</li>
-          </ul>
-        </div>
+    <p>
+      Built a fully integrated financial model linking income statement, balance sheet,
+      and cash flow projections with forward-looking assumptions.
+    </p>
 
-        <div class="box">
-          <b>Valuation</b>
-          <ul>
-            <li>Comparable Companies</li>
-            <li>Relative Valuation</li>
-            <li>WACC & Beta</li>
-          </ul>
-        </div>
+    <ul>
+      <li>Driver-based forecasting</li>
+      <li>DCF valuation framework</li>
+      <li>Relative valuation cross-check</li>
+      <li>Sensitivity analysis</li>
+    </ul>
 
-        <div class="box">
-          <b>Analysis</b>
-          <ul>
-            <li>ROIC & DuPont</li>
-            <li>Altman Z-Score</li>
-            <li>Financial Statements</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+    <div class="positive">
+      Output: Internally consistent financial model and valuation framework
+    </div>
 
-    <!-- PROJECTS -->
-    <section id="projects">
-      <h2>Self Projects</h2>
+    <h3>Index Valuation</h3>
 
-      <div class="project">
-        <h3>Valuation Model with Researched Forecasting</h3>
+    <p>
+      Developed a macro-driven valuation framework using earnings yield as a proxy for cash flows,
+      incorporating dividends and buybacks.
+    </p>
 
-        <p><b>Approach:</b> Driver-based forecasting with integrated 3-statement modelling</p>
+    <p>
+      Integrated macro variables such as GDP growth, interest rates, and equity risk premium
+      to assess valuation relative to fundamentals.
+    </p>
 
-        <ul>
-          <li>DCF valuation with structured assumptions</li>
-          <li>Relative valuation for cross-verification</li>
-          <li>Scenario & sensitivity analysis</li>
-        </ul>
+    <div class="highlight">
+      Framework: Earnings yield + ERP + macro inputs
+    </div>
 
-        <p><b>Output:</b> Financial model and valuation framework</p>
-      </div>
+    <a href="https://drive.google.com/drive/folders/14AA5CHD85W6C-L4QYD09P9YYShG5mcQJ?usp=sharing" target="_blank" class="btn">
+      View Index Reports
+    </a>
 
-      <div class="project">
-        <h3>Index Valuation</h3>
+    <h3>Company Valuation</h3>
 
-        <p>
-          Developed a macro-driven valuation framework using earnings yield, risk-free rate,
-          and equity risk premium to assess market-level valuation.
-        </p>
+    <ul>
+      <li>Ratio and capital structure analysis</li>
+      <li>Multiples-based valuation</li>
+      <li>Investment thesis development</li>
+    </ul>
 
-        <p>
-          Integrated macro variables such as GDP growth, interest rate cycles, and
-          market-implied risk premium to evaluate valuation relative to fundamentals.
-        </p>
+    <div class="positive">
+      Output: Structured valuation reports
+    </div>
 
-        <a href="https://drive.google.com/drive/folders/14AA5CHD85W6C-L4QYD09P9YYShG5mcQJ?usp=sharing" target="_blank" class="btn">
-          View Index Reports
-        </a>
-      </div>
+    <a href="https://drive.google.com/drive/folders/1QylB0_rJe52NZGMt2xfflCQn2mWc2uf7?usp=sharing" target="_blank" class="btn">
+      View Company Reports
+    </a>
 
-      <div class="project">
-        <h3>Company Valuation</h3>
+  </div>
 
-        <ul>
-          <li>Ratio & capital structure analysis</li>
-          <li>Multiples-based valuation</li>
-          <li>Investment thesis development</li>
-        </ul>
+  <!-- EDUCATION -->
+  <div class="page" id="education">
+    <div class="section-header">4. Education</div>
 
-        <a href="https://drive.google.com/drive/folders/1QylB0_rJe52NZGMt2xfflCQn2mWc2uf7?usp=sharing" target="_blank" class="btn">
-          View Company Reports
-        </a>
-      </div>
+    <p><b>Bachelor of Commerce (B.Com) – 2024</b></p>
+    <p>
+      Developed foundation in accounting, finance, and business analysis with focus on
+      financial statements and capital markets.
+    </p>
 
-      <div class="project">
-        <h3>NYU Stern Learning (Dr. Aswath Damodaran)</h3>
-        <p>DCF valuation, cost of capital, and intrinsic valuation frameworks applied in practice</p>
-      </div>
-    </section>
+    <p><b>CFA Program – CFA Institute</b></p>
+    <ul>
+      <li>CFA Level II Cleared</li>
+      <li>Coverage: Valuation, Equity Analysis, Portfolio Management</li>
+    </ul>
 
-    <!-- EDUCATION -->
-    <section id="education">
-      <h2>Education</h2>
+    <div class="highlight">
+      Focus Area: Valuation and Investment Analysis
+    </div>
+  </div>
 
-      <div class="box">
-        <ul>
-          <li>B.Com – 2024</li>
-          <li>CFA Level II Cleared – CFA Institute</li>
-        </ul>
-      </div>
-    </section>
+  <!-- CONTACT -->
+  <div class="page" id="contact">
+    <div class="section-header">5. Contact</div>
 
-    <!-- CERTIFICATIONS -->
-    <section id="certifications">
-      <h2>Certifications</h2>
+    <p>Email: dalmiabhavya309@gmail.com</p>
+    <p>Mobile: +91 87420 8428</p>
 
-      <div class="project">
-        <h3>Advanced Financial Modelling & Valuation – The Valuation School</h3>
-        <p>Core training in financial modelling, DCF valuation, and report creation.</p>
-      </div>
-
-      <div class="project">
-        <h3>Citi – Investment Banking Job Simulation</h3>
-        <p>Financial projections, comps analysis, and investment summary preparation.</p>
-      </div>
-
-      <div class="project">
-        <h3>CFA Level II – CFA Institute</h3>
-        <p>Valuation, equity analysis, and portfolio management.</p>
-      </div>
-
-      <div class="project">
-        <h3>BCG – Strategy Consulting Simulation</h3>
-        <p>Structured problem-solving and business analysis.</p>
-      </div>
-
-      <div class="project">
-        <h3>CFA Level I – CFA Institute</h3>
-        <p>Foundation in financial analysis and investment tools.</p>
-      </div>
-
-      <div class="project">
-        <h3>Investment Banking – 365 Careers</h3>
-        <p>Financial modelling, valuation, and deal fundamentals.</p>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact">
-      <h2>Contact</h2>
-
-      <a href="mailto:dalmiabhavya309@gmail.com" class="btn">Email Me</a>
-      <a href="https://www.linkedin.com/in/bhavyadalmia/" target="_blank" class="btn">LinkedIn</a>
-
-      <p style="margin-top:15px;">Mobile: +91 87420 8428</p>
-    </section>
-
+    <a href="mailto:dalmiabhavya309@gmail.com" class="btn">Email</a>
+    <a href="https://www.linkedin.com/in/bhavyadalmia/" target="_blank" class="btn">LinkedIn</a>
   </div>
 
 </div>
