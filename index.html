@@ -5,269 +5,334 @@
 <title>Bhavya Dalmia | Valuation Research</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
-  html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; }
 
-  body {
-    margin: 0;
-    font-family: 'Inter', sans-serif;
-    background: #f8fafc;
-    color: #111827;
-  }
+:root{
+  --bg1:#f7f4ef;
+  --bg2:#f1ede7;
+  --card:#faf7f2;
+  --panel:#f8f5f0;
+  --border:#e6e1d9;
 
-  /* NAVBAR */
-  .navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: #ffffff;
-    border-bottom: 1px solid #e5e7eb;
-    padding: 12px 30px;
-    z-index: 1000;
-  }
+  --text:#1f2937;
+  --muted:#6b7280;
 
-  .navbar a {
-    margin-right: 25px;
-    text-decoration: none;
-    color: #374151;
-    font-size: 0.9rem;
-    font-weight: 500;
-  }
+  --accent:#3f3f46;
+  --accent-strong:#18181b;
 
-  .navbar a:hover {
-    color: #2563eb;
-  }
+  --gold:#c6a46c;
+  --gold-soft:#f5efe3;
 
-  /* CONTAINER */
-  .container {
-    max-width: 900px;
-    margin: auto;
-    padding: 90px 20px 40px;
-  }
+  --success:#166534;
+  --success-bg:#eef8f1;
+}
 
-  /* PAGE */
-  .page {
-    background: #ffffff;
-    padding: 40px;
-    margin-bottom: 40px;
-    border: 1px solid #e5e7eb;
-  }
+body{
+  margin:0;
+  font-family:'Inter',sans-serif;
+  background:linear-gradient(180deg,var(--bg1),var(--bg2));
+  color:var(--text);
+}
 
-  /* HEADER BLOCK */
-  .section-header {
-    background: #eff6ff;
-    border-left: 6px solid #2563eb;
-    padding: 12px;
-    margin-bottom: 20px;
-    font-weight: 600;
-    color: #1e3a8a;
-  }
+/* SIDEBAR */
+.sidebar{
+  position:fixed;
+  width:230px;
+  height:100vh;
+  background:var(--panel);
+  border-right:1px solid var(--border);
+  padding-top:60px;
+}
 
-  h1 { font-size: 2rem; }
-  h3 { color: #1e40af; }
+.sidebar a{
+  display:block;
+  padding:12px 22px;
+  text-decoration:none;
+  color:#4b5563;
+  border-left:3px solid transparent;
+}
 
-  p { line-height: 1.6; color: #374151; }
-  ul { padding-left: 18px; }
+.sidebar a:hover{
+  background:#ebe7e1;
+  border-left:3px solid var(--gold);
+}
 
-  /* BOXES */
-  .highlight {
-    background: #eff6ff;
-    border-left: 4px solid #2563eb;
-    padding: 12px;
-    margin: 15px 0;
-  }
+/* CONTENT */
+.content{
+  margin-left:230px;
+  padding:40px;
+}
 
-  .positive {
-    background: #ecfdf5;
-    border-left: 4px solid #16a34a;
-    padding: 12px;
-    margin: 15px 0;
-  }
+/* PAGE */
+.page{
+  background:var(--card);
+  padding:60px;
+  margin-bottom:50px;
+  border-radius:12px;
+  border:1px solid var(--border);
+  box-shadow:0 12px 35px rgba(0,0,0,0.04);
+}
 
-  /* BUTTONS */
-  .btn {
-    display: inline-block;
-    margin-top: 12px;
-    margin-right: 10px;
-    padding: 8px 14px;
-    border-radius: 6px;
-    font-size: 0.85rem;
-    font-weight: 500;
-    text-decoration: none;
-    border: 1px solid #2563eb;
-    color: #2563eb;
-    transition: 0.25s;
-  }
+/* COVER */
+.cover{
+  height:85vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
 
-  .btn:hover {
-    background: #2563eb;
-    color: white;
-  }
+.cover h1{
+  font-size:3.8rem;
+  font-weight:700;
+  letter-spacing:-0.5px;
+}
 
+.cover p{
+  font-size:1.2rem;
+  color:var(--muted);
+}
+
+/* SECTION HEADER */
+.section-header{
+  font-size:1.5rem;
+  font-weight:700;
+  padding:16px 18px;
+  margin-bottom:32px;
+  border-left:6px solid var(--gold);
+  background:var(--gold-soft);
+}
+
+/* SUB HEAD */
+h3{
+  font-size:1.15rem;
+  font-weight:600;
+  margin-top:24px;
+  color:var(--accent);
+}
+
+/* TEXT */
+p{
+  line-height:1.75;
+  margin-bottom:16px;
+}
+
+/* CALLOUT */
+.callout{
+  background:#f8f6f2;
+  border-left:4px solid var(--gold);
+  padding:14px;
+  margin:18px 0;
+}
+
+/* OUTPUT */
+.output{
+  background:var(--success-bg);
+  border-left:5px solid var(--success);
+  padding:14px;
+  margin-top:12px;
+}
+
+/* BUTTON */
+.btn{
+  display:inline-block;
+  margin-top:14px;
+  padding:9px 16px;
+  border-radius:6px;
+  border:1px solid var(--accent);
+  color:var(--accent);
+  text-decoration:none;
+}
+
+.btn:hover{
+  background:var(--accent);
+  color:white;
+}
 </style>
 </head>
 
 <body>
 
-<!-- NAV -->
-<div class="navbar">
-  <a href="#about">About</a>
+<div class="sidebar">
+  <a href="#cover">Overview</a>
+  <a href="#about">About Me</a>
   <a href="#skills">Skills</a>
-  <a href="#projects">Projects</a>
+  <a href="#projects">Self Projects</a>
+  <a href="#certifications">Certifications</a>
+  <a href="#learning">Self Learning</a>
   <a href="#education">Education</a>
   <a href="#contact">Contact</a>
 </div>
 
-<div class="container">
+<div class="content">
 
-  <!-- ABOUT -->
-  <div class="page" id="about">
-    <h1>Bhavya Dalmia</h1>
-    <p><b>CFA Level III Candidate | Valuation | Financial Modelling</b></p>
+<!-- COVER -->
+<div class="page cover" id="cover">
+  <h1>Bhavya Dalmia</h1>
+  <p>CFA Level III Candidate | Valuation | Financial Modelling</p>
+</div>
 
-    <div class="section-header">1. About</div>
+<!-- ABOUT -->
+<div class="page" id="about">
+  <div class="section-header">About Me</div>
 
-    <p>
-      Finance graduate and CFA Level III candidate focused on valuation, capital allocation,
-      and identifying mispriced opportunities. Experience building structured financial models
-      and applying valuation frameworks across different market contexts.
-    </p>
+  <p>
+    Finance graduate and CFA Level III candidate focused on valuation, capital allocation,
+    and identifying mispriced opportunities through structured financial analysis.
+  </p>
 
-    <p>
-      Approach combines bottom-up financial analysis with macro-driven inputs such as interest
-      rates, growth assumptions, and risk premiums. Strong emphasis on linking financial statements,
-      maintaining internal consistency, and translating analysis into investment conclusions.
-    </p>
+  <p>
+    Experience building financial models and applying valuation frameworks across
+    company-level and market-level analysis using disciplined assumptions.
+  </p>
 
-    <div class="highlight">
-      Focus: Converting financial data into structured valuation frameworks and investment insights
-    </div>
+  <div class="callout">
+    Positioning: Valuation-focused analyst with strong modelling foundation
+  </div>
+</div>
 
+<!-- SKILLS -->
+<div class="page" id="skills">
+  <div class="section-header">Skills</div>
+
+  <h3>Financial Modelling</h3>
+  <p>
+    Built integrated 3-statement financial models with driver-based forecasting,
+    ensuring internal consistency across projections.
+  </p>
+
+  <h3>Valuation</h3>
+  <p>
+    Applied DCF and relative valuation techniques to estimate fair value
+    and identify market mispricing.
+  </p>
+
+  <div class="output">
+    Output: Structured valuation frameworks used for investment decisions
+  </div>
+</div>
+
+<div class="page" id="projects">
+  <div class="section-header">Self Projects</div>
+
+  <h3>Valuation Model with Researched Forecasting</h3>
+  <p>
+    Built an integrated three-statement financial model using driver-based assumptions
+    derived from business fundamentals and historical trends.
+  </p>
+  <p>
+    Valuation performed using DCF with sensitivity analysis on growth, margins,
+    and cost of capital to assess impact on intrinsic value.
+  </p>
+
+  <div class="output">
+    Output: Structured valuation model with scenario-based sensitivity analysis
   </div>
 
-  <!-- SKILLS -->
-  <div class="page" id="skills">
-    <div class="section-header">2. Skills</div>
+  <h3>Index Valuation</h3>
+  <p>
+    Developed a macro-driven valuation framework using earnings yield,
+    interest rates, and equity risk premium to assess overall market valuation.
+  </p>
+  <p>
+    Focus on evaluating whether market pricing reflects realistic forward expectations
+    or embeds over/under valuation.
+  </p>
 
-    <h3>Financial Modelling</h3>
-    <ul>
-      <li>Integrated 3-statement modelling</li>
-      <li>Driver-based forecasting</li>
-      <li>Scenario and sensitivity analysis</li>
-    </ul>
-
-    <h3>Valuation</h3>
-    <ul>
-      <li>Discounted Cash Flow (DCF)</li>
-      <li>Comparable Companies (Comps)</li>
-      <li>Cost of Capital (WACC, Beta)</li>
-    </ul>
-
-    <h3>Analysis</h3>
-    <ul>
-      <li>ROIC and DuPont analysis</li>
-      <li>Altman Z-score</li>
-      <li>Financial statement analysis</li>
-    </ul>
-
-    <div class="positive">
-      Output: Structured models, valuation frameworks, and investment insights
-    </div>
+  <div class="callout">
+    Framework: Earnings Yield + ERP + Macro Drivers
   </div>
 
-  <!-- PROJECTS -->
-  <div class="page" id="projects">
-    <div class="section-header">3. Self Projects</div>
+  <a href="https://drive.google.com/drive/folders/14AA5CHD85W6C-L4QYD09P9YYShG5mcQJ?usp=sharing" class="btn">
+    View Index Reports
+  </a>
 
-    <h3>Valuation Model with Researched Forecasting</h3>
+  <h3>Company Valuation</h3>
+  <p>
+    Conducted company-level valuation using financial ratio analysis,
+    capital structure evaluation, and comparable company frameworks.
+  </p>
+  <p>
+    Linked operating performance, return metrics, and valuation multiples
+    to form structured investment views.
+  </p>
 
-    <p>
-      Built a fully integrated financial model linking income statement, balance sheet,
-      and cash flow projections with forward-looking assumptions.
-    </p>
-
-    <ul>
-      <li>Driver-based forecasting</li>
-      <li>DCF valuation framework</li>
-      <li>Relative valuation cross-check</li>
-      <li>Sensitivity analysis</li>
-    </ul>
-
-    <div class="positive">
-      Output: Internally consistent financial model and valuation framework
-    </div>
-
-    <h3>Index Valuation</h3>
-
-    <p>
-      Developed a macro-driven valuation framework using earnings yield as a proxy for cash flows,
-      incorporating dividends and buybacks.
-    </p>
-
-    <p>
-      Integrated macro variables such as GDP growth, interest rates, and equity risk premium
-      to assess valuation relative to fundamentals.
-    </p>
-
-    <div class="highlight">
-      Framework: Earnings yield + ERP + macro inputs
-    </div>
-
-    <a href="https://drive.google.com/drive/folders/14AA5CHD85W6C-L4QYD09P9YYShG5mcQJ?usp=sharing" target="_blank" class="btn">
-      View Index Reports
-    </a>
-
-    <h3>Company Valuation</h3>
-
-    <ul>
-      <li>Ratio and capital structure analysis</li>
-      <li>Multiples-based valuation</li>
-      <li>Investment thesis development</li>
-    </ul>
-
-    <div class="positive">
-      Output: Structured valuation reports
-    </div>
-
-    <a href="https://drive.google.com/drive/folders/1QylB0_rJe52NZGMt2xfflCQn2mWc2uf7?usp=sharing" target="_blank" class="btn">
-      View Company Reports
-    </a>
-
+  <div class="output">
+    Output: Valuation reports with financial analysis and investment reasoning
   </div>
 
-  <!-- EDUCATION -->
-  <div class="page" id="education">
-    <div class="section-header">4. Education</div>
+  <a href="https://drive.google.com/drive/folders/1QylB0_rJe52NZGMt2xfflCQn2mWc2uf7?usp=sharing" class="btn">
+    View Company Reports
+  </a>
 
-    <p><b>Bachelor of Commerce (B.Com) – 2024</b></p>
-    <p>
-      Developed foundation in accounting, finance, and business analysis with focus on
-      financial statements and capital markets.
-    </p>
+</div>
+</div>
+<!-- CERTIFICATIONS -->
+<div class="page" id="certifications">
+  <div class="section-header">Certifications</div>
 
-    <p><b>CFA Program – CFA Institute</b></p>
-    <ul>
-      <li>CFA Level II Cleared</li>
-      <li>Coverage: Valuation, Equity Analysis, Portfolio Management</li>
-    </ul>
+  <h3>CFA Program – CFA Institute</h3>
+  <p>
+    Cleared Level I and Level II covering valuation, equity analysis,
+    portfolio management, and financial modelling.
+  </p>
 
-    <div class="highlight">
-      Focus Area: Valuation and Investment Analysis
-    </div>
+  <h3>Advanced Financial Modelling – Valuation School</h3>
+  <p>
+    Built core modelling capabilities including 3-statement modelling and DCF valuation.
+  </p>
+
+  <h3>Citi Investment Banking Simulation</h3>
+  <p>
+    Built financial projections, company analysis, and valuation frameworks in acquisition scenario.
+  </p>
+
+  <h3>BCG Strategy Simulation</h3>
+  <p>
+    Applied structured problem-solving in consulting-style business scenarios.
+  </p>
+</div>
+
+<!-- SELF LEARNING -->
+<div class="page" id="learning">
+  <div class="section-header">Self Learning</div>
+
+  <p>
+    Continuous development of valuation frameworks and financial modelling through independent analysis.
+  </p>
+
+  <p>
+    Focus on linking macro variables to valuation assumptions and improving model accuracy.
+  </p>
+
+  <div class="callout">
+    Focus: Deepening valuation judgment through repeated modelling practice
   </div>
+</div>
 
-  <!-- CONTACT -->
-  <div class="page" id="contact">
-    <div class="section-header">5. Contact</div>
+<!-- EDUCATION -->
+<div class="page" id="education">
+  <div class="section-header">Education</div>
 
-    <p>Email: dalmiabhavya309@gmail.com</p>
-    <p>Mobile: +91 87420 8428</p>
+  <p><b>Bachelor of Commerce (B.Com)</b></p>
+  <p>Foundation in accounting, finance, and capital markets.</p>
 
-    <a href="mailto:dalmiabhavya309@gmail.com" class="btn">Email</a>
-    <a href="https://www.linkedin.com/in/bhavyadalmia/" target="_blank" class="btn">LinkedIn</a>
-  </div>
+  <p><b>CFA Program Progression</b></p>
+  <p>Completed Level II, preparing for Level III.</p>
+</div>
+
+<!-- CONTACT -->
+<div class="page" id="contact">
+  <div class="section-header">Contact</div>
+
+  <p>Email: dalmiabhavya309@gmail.com</p>
+  <p>Mobile: +91 87420 8428</p>
+
+  <a href="mailto:dalmiabhavya309@gmail.com" class="btn">Email</a>
+  <a href="https://www.linkedin.com/in/bhavyadalmia/" class="btn">LinkedIn</a>
+</div>
 
 </div>
 
